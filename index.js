@@ -11,4 +11,8 @@ app.all('/', (req, res) => {
 app.get('/api/v0/', (req, res) => {
     res.json({msg: "start live api"})
 })
+
+app.get('/api/v0/admin/', (req, res) => {
+    res.json({msg: "start admin"})
+})
 app.listen(process.env.PORT || 3000)
