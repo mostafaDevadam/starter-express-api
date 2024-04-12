@@ -15,4 +15,9 @@ app.get('/api/v0/', (req, res) => {
 app.get('/api/v0/admin/', (req, res) => {
     res.json({msg: "start admin"})
 })
+
+app.get('/api/v0/sublime/', (req, res) => {
+    res.json({msg: "hello sublime"})
+})
+
 app.listen(process.env.PORT || 3000)
